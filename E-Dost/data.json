@@ -1,0 +1,136 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Hii", "Good morning", "Good evening"],
+            "responses": ["Hello! How can I assist you today?", "Hi there! How can I help?", "Hey! What's up?", "Hello! How was your day today? Did you take all your classes?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later"],
+            "responses": ["Goodbye! Have a nice day!", "See you! Come back anytime you need help.", "Bye! Take care!", "Catch you later! Don't hesitate to reach out."],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "Much appreciated", "Thanks for the help", "Thank you so much"],
+            "responses": ["You're welcome!", "Happy to help!", "Anytime!", "Glad to be of assistance!"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["I'm not sure I understand. Could you give me more details?", "Sorry, I didn't get that. Can you try rephrasing?", "I'm here to help. Could you tell me more?"],
+            "context": [""]
+        },
+        {
+            "tag": "options",
+            "patterns": ["What can you help me with?", "How can you assist?", "What are your capabilities?", "What support can I get here?", "What services are available?"],
+            "responses": ["I can help you with academic support, campus events, exam schedules, mental health resources, and more! Let me know what you need help with."],
+            "context": [""]
+        },
+        {
+            "tag": "academic_support",
+            "patterns": ["I need help with my studies", "Can you provide academic support?", "Help me with my coursework", "I need study materials"],
+            "responses": ["I can guide you with study resources, help you find a tutor, or connect you with academic advisors. Let me know what you need assistance with."],
+            "context": [""]
+        },
+        {
+            "tag": "exam_preparation",
+            "patterns": ["How do I prepare for exams?", "Give me tips for exams", "I'm stressed about exams", "How to study for finals?"],
+            "responses": ["Start by making a study plan, focus on key topics, take regular breaks, and practice past papers. Remember, managing stress is also important for effective preparation!"],
+            "context": [""]
+        },
+        {
+            "tag": "events",
+            "patterns": ["What's happening on campus?", "Are there any events?", "What events are coming up?", "Is there a cultural fest?"],
+            "responses": ["Here are some upcoming events: Cultural Fest, Tech Symposium, and Sports Day! Would you like more details on any of these?"],
+            "context": [""]
+        },
+        {
+            "tag": "mental_health_support",
+            "patterns": ["I feel stressed", "I need mental health support", "Can you help me with anxiety?", "I'm feeling low"],
+            "responses": ["It's okay to feel this way. The college has counselors available, or I can provide tips for managing stress and anxiety. Remember, you're not alone."],
+            "context": [""]
+        },
+        {
+            "tag": "campus_facilities",
+            "patterns": ["What facilities are on campus?", "Show me campus amenities", "Where can I find the library?", "Is there a gym on campus?"],
+            "responses": ["Our campus has various facilities like a library, gym, cafeteria, and labs. Let me know if you need directions to any specific facility."],
+            "context": [""]
+        },
+        {
+            "tag": "cafeteria_menu",
+            "patterns": ["What's on the menu today?", "What's available in the cafeteria?", "Can you show me the cafeteria menu?", "What's for lunch in the canteen?"],
+            "responses": ["Today's cafeteria menu includes: Pasta, Sandwiches, Salad, and Fruit Juice. Let me know if you want more options!"],
+            "context": [""]
+        },
+        {
+            "tag": "adverse_drug",
+            "patterns": ["How to check for adverse drug reactions?", "Open adverse drug reaction module", "Show me drugs with adverse reactions"],
+            "responses": ["Navigating to the adverse drug reaction module for a detailed list."],
+            "context": [""]
+        },
+        {
+            "tag": "blood_pressure",
+            "patterns": ["Open blood pressure module", "Log blood pressure", "Track my blood pressure"],
+            "responses": ["Navigating to the Blood Pressure module."],
+            "context": [""]
+        },
+        {
+            "tag": "pharmacy_search",
+            "patterns": ["Find a nearby pharmacy", "Locate a pharmacy", "Where is the closest pharmacy?"],
+            "responses": ["Here are some nearby pharmacies: Apollo Pharmacy, MedPlus, and Ayisha Pharmacy."],
+            "context": ["search_pharmacy_by_name"]
+        },
+        {
+            "tag": "search_pharmacy_by_name",
+            "patterns": [],
+            "responses": ["Loading pharmacy details."],
+            "context": [""]
+        },
+        {
+            "tag": "library_hours",
+            "patterns": ["What are the library hours?", "When does the library open?", "Library opening times"],
+            "responses": ["The library is open from 8 AM to 12 PM on weekdays, and from 10 AM to 5 PM on weekends."],
+            "context": [""]
+        },
+        {
+            "tag": "student_clubs",
+            "patterns": ["What clubs are available?", "Tell me about student clubs", "Are there any clubs I can join?"],
+            "responses": ["Our college has various student clubs including Drama, Robotics, Debate, and Photography. Let me know if you're interested in any specific club!"],
+            "context": [""]
+        },
+        {
+            "tag": "academic_calendar",
+            "patterns": ["Show me the academic calendar", "When are the holidays?", "Can I see the college schedule?"],
+            "responses": ["The academic calendar includes key dates for exams, holidays, and other events. You can access it on the college website or I can provide specific dates if you need."],
+            "context": [""]
+        },
+        {
+            "tag": "image",
+            "patterns": ["give me an image?"],
+            "responses": ["https://www.pexels.com/photo/blue-bmw-sedan-near-green-lawn-grass-170811/"],
+            "context": [""]
+        },
+        {
+            "tag": "hostel_services",
+            "patterns": ["Tell me about hostel services", "What are the hostel facilities?", "Can I get hostel details?"],
+            "responses": ["Our hostels offer facilities like Wi-Fi, laundry, a reading room, and recreational areas. Let me know if you have specific questions about the hostels."],
+            "context": [""]
+        },
+        {
+            "tag": "lost_and_found",
+            "patterns": ["I lost something", "Is there a lost and found?", "Where can I report a lost item?"],
+            "responses": ["Please visit the lost and found section in the administration building or report your lost item here so we can help you track it."],
+            "context": [""]
+        },
+        {
+            "tag": "emergency_contact",
+            "patterns": ["Who do I contact in an emergency?", "Give me emergency contacts", "I need urgent help"],
+            "responses": ["For emergencies, you can contact the campus security at +1234567890 or the nearest hospital. Don't hesitate to call if you're in danger."],
+            "context": [""]
+        }
+    ]
+}
